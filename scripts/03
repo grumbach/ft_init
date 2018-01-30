@@ -1,1 +1,1 @@
-du -sh $1 | sort -h
+du -sh $1/* | sort -h
