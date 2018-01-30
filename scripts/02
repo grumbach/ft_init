@@ -1,0 +1,5 @@
+# the ~/updater.sh file contains
+apt-get update &> /var/log/update_script.log && apt-get upgrade -y &> /var/log/update_script.log
+
+# copy this line in the /etc/crontab file
+# 0  4    * * 1   root    sh ~/updater.sh
